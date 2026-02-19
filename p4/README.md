@@ -87,23 +87,19 @@ Through this report we expect you to demonstrate your ability to constructively 
 ## Points & Teams
 A portion of your grade will be based on performance against the following staff agents:
  - `staff_baseline`
- - `staff_PhantomSlug`
- - `staff_SlugTrap`
  - TBD
 
 Points are also awarded as follows:
  - If you lose to the dummy agent, zero points will be awarded for this section.
- - 10 points for beating the `staff_baseline` agent.
- - +5 points for beating one additional staff agent.
- - +5 points for beating 2 staff agents (in addition to `staff_baseline`), OR.
-   - +1 points for being in the top 50%.
-   - +2 points for being in the top 40%.
-   - +3 points for being in the top 30%.
-   - +4 points for being in the top 20%.
-   - +5 points for being in the top 10%.
+ - +5 points for beating the `staff_baseline` agent as red.
+ - +5 points for beating the `staff_baseline` agent as blue.
+ - +2.5 points for beating one additional staff agent as red.
+ - +2.5 points for beating one additional staff agent as blue.
+ - +2.5 points for beating a second additional staff agent as red.
+ - +2.5 points for beating a second additional staff agent as blue.
  - +1 Extra Credit point for being the number one team.
 
-For the purposes of the points system, we define ‘beating’ an agent as winning against that agent both when playing as red and as blue.
+For the purposes of the points system, we define "beating" an agent as winning against that agent both when playing as red and as blue.
 <!-- How we compute the percentiles based on the ranking of the teams is described below in [Contest Details](#contest-details). -->
 
 ### Academic Dishonesty
@@ -242,6 +238,7 @@ When creating your agent,
 make sure to thoroughly examine the Capture game state class ([pacai.capture.gamestate.GameState](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/capture/gamestate.html#GameState)).
 There are many function that you may find useful.
 
+<!-- TODO(Batu): Update the tournament link.. -->
 ### Official Tournaments
 
 Round-robin contests will be run using nightly automated tournaments on the course server,
@@ -252,12 +249,12 @@ Tournaments are run every night (refer to Canvas for nightly cut off) and includ
 Currently, each team is matched up with every other team two times (each matchup consists of 11 games).
 In the first match, one team is `red` and the other is `blue`.
 In the second match, they switch sides (the `red` team plays as `blue`, and the `blue` team plays as `red`).
-This ensures you don’t hard-code any color specific behavior or assumptions.
+This ensures you don't hard-code any color specific behavior or assumptions.
 
 The boards used in the tournament will be drawn from both the default board (5 games),
 as well as randomly generated boards (6 games).
 All boards are symmetric, and the team that moves first is randomly chosen.
-The results for a nightly tournaments can be found [here](http://seacliff.soe.ucsc.edu/cse140-f25/tournaments/), where you can view overall rankings and scores for each match.
+The results for a nightly tournaments can be found **TBD**, where you can view overall rankings and scores for each match.
 You can also download replays, the boards used, and the stdout / stderr logs for each agent.
 When examining replay JSON files, the CLI of json [module](https://docs.python.org/3/library/json.html#module-json.tool) may be helpful.
 

@@ -23,7 +23,7 @@ some of which you will need to read and understand in order to complete the assi
 
 You will fill in portions of
 [`pacai/student/learning.py`](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/learning.py)
-and [`pacai/student/learning-questions.py`](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/learning_questions.py)
+and [`pacai/student/learning_questions.py`](https://github.com/edulinq/pacai/blob/v2.0.1/pacai/student/learning_questions.py)
 during this assignment.
 You should **only** submit these two files.
 Unless told otherwise, you may create whatever supporting functions, methods, and members you need,
@@ -33,7 +33,7 @@ For instructions on submission,
 refer back to the [P0 README](../p0/README.md).
 for example, you may submit with the command:
 ```sh
-python3 -m autograder.run.submit pacai/student/learning.py pacai/student/learning-questions.py
+python3 -m autograder.run.submit pacai/student/learning.py pacai/student/learning_questions.py
 ```
 
 ### Evaluation
@@ -181,7 +181,7 @@ Once you are on that, you agent is then forced to take the "EXIT" action and ent
 which then causes it to exit/end the game/round/episode.
 This behavior matches more closely with what you may see in your textbook,
 since there are theoretical reasons that it makes more sense than just exiting directly.
-If you run with `--debug`, you can see your agent enter the per-terminal state,
+If you run with `--debug`, you can see your agent enter the pre-terminal state,
 get a reward, and then be forced to take the "EXIT" action.
 
 If your games ever appear to be "hanging" (especially if you have no UI or debug output),
@@ -280,7 +280,7 @@ python3 -m pacai.gridworld --agent agent-value-iteration --board gridworld-bridg
 
 Change only **ONE** of the discount and noise parameters (and nothing else) so that the optimal policy causes your agent to attempt to cross the bridge.
 (They may not make it, but they at least need to try.)
-Put your answer in the [pacai.student.learning-questions.question_2](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_2) function.
+Put your answer in the [pacai.student.learning_questions.question_2](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_2) function.
 
 ### Question 3 (5 points)
 
@@ -438,7 +438,7 @@ python3 -m pacai.gridworld --agent agent-qlearning --board gridworld-bridge --qd
 
 Is there a set of values for the learning and exploration rates that make it highly likely (greater than 99%)
 for your agent to develop a policy that crosses the bridge to reach the 10 point exit?
-Put your answer in the [pacai.student.learning-questions.question_5](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_5) function.
+Put your answer in the [pacai.student.learning_questions.question_5](https://edulinq.github.io/pacai/docs/v2.0.1/pacai/student/learning_questions.html#question_5) function.
 If there is no such pair of values, return a single `None`.
 
 ## State Abstraction

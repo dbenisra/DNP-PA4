@@ -87,7 +87,8 @@ Through this report we expect you to demonstrate your ability to constructively 
 ## Points & Teams
 A portion of your grade will be based on performance against the following staff agents:
  - `staff_baseline`
- - TBD
+ - `staff_SlugRush`
+ - `staff_PhantomSlug`
 
 Points are also awarded as follows:
  - If you lose to the dummy agent, zero points will be awarded for this section.
